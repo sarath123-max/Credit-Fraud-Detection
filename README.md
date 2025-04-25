@@ -1,39 +1,75 @@
-💳 Credit Card Fraud Detection
-
-This project detects fraudulent credit card transactions using machine learning. The dataset used is highly imbalanced, so special techniques like SMOTE are applied for effective fraud detection.
-
-
-🛠 Technologies Used
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- SMOTE (Imbalanced-learn)
-- Matplotlib, Seaborn
 
 ---
 
-📊 Key Features
-- Feature scaling using `StandardScaler` for consistent model input.
-- Synthetic oversampling using `SMOTE` to handle class imbalance.
-- Model training using `RandomForestClassifier`.
-- Evaluation with Confusion Matrix, Precision, Recall, and F1-score.
+# 💳 Credit Card Fraud Detection
+
+This project builds a machine learning model to detect fraudulent credit card transactions. The dataset used is **highly imbalanced**, making fraud detection challenging. To address this, techniques like **SMOTE** are used to synthetically oversample the minority class, enabling more robust fraud detection.
 
 ---
 
-🧪 Results
-- Achieved strong classification performance on imbalanced data.
-- Fraud detection model capable of identifying rare transaction anomalies.
+## 🛠 Technologies Used
+
+- **Python**
+- **Pandas**, **NumPy** – Data manipulation
+- **Scikit-learn** – ML modeling & evaluation
+- **SMOTE (Imbalanced-learn)** – Class imbalance handling
+- **Matplotlib**, **Seaborn** – Data visualization
 
 ---
 
-📁 Dataset
-- [Kaggle Credit Card Fraud Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+## 📊 Key Features
+
+- 📏 Feature scaling using `StandardScaler` for consistent model inputs  
+- ⚖️ Class imbalance handled using **SMOTE**  
+- 🌲 Model training with **RandomForestClassifier**  
+- 📈 Model evaluation using:
+  - Confusion Matrix  
+  - Precision, Recall  
+  - F1-Score  
 
 ---
 
-🖥️ How to Run
-1. Clone the repository  
-2. Place the `creditcard.csv` file in the same directory  
-3. Run the notebook or script:  
+## 🧪 Results
+
+- Achieved strong performance on **imbalanced** credit card transaction data  
+- The model effectively detects **rare fraudulent activities** among legitimate transactions
+
+---
+
+## 📁 Dataset
+
+Dataset is publicly available on Kaggle:
+
+🔗 [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+---
+
+## 🖥️ How to Run
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/credit-card-fraud-detection.git
+   cd credit-card-fraud-detection
+   ```
+
+2. **Add the dataset**:
+   Place the `creditcard.csv` file in the same directory as your script or notebook.
+
+3. **Run the script**:
    ```bash
    python fraud_detection.py
+   ```
+
+> You can also run the Jupyter notebook version if preferred:
+```bash
+jupyter notebook fraud_detection.ipynb
+```
+
+---
+
+## 📬 Contact
+
+For questions, contributions, or suggestions, feel free to [open an issue](https://github.com/yourusername/credit-card-fraud-detection/issues) or contact me via GitHub.
+
+---
+
